@@ -13,6 +13,10 @@
     // justify-content: center;
     // row-gap: 3rem;
 
+    @media screen and (max-width: $bp-medium) {
+        grid-column: 1 / -1;
+    }
+
     &__list {
         display: grid;
         grid-template-columns: min-content max-content;
@@ -20,6 +24,14 @@
         row-gap: 3vh;
         align-items: center;
         justify-content: center;
+
+        @media screen and (max-width: $bp-medium) {
+            grid-template-columns: repeat(3, min-content max-content);
+        }
+
+        @media screen and (max-width: $bp-medium) {
+            grid-template-columns: min-content max-content;
+        }
     }
 
     &__img {
